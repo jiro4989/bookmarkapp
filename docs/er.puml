@@ -1,0 +1,81 @@
+@startuml
+
+' ユーザ
+entity user {
+  *id : varchar(255)
+  --
+  *email : varchar(255)
+  password : text
+  name : varchar(255)
+  created_at : datetime
+  updated_at : datetime
+  deleted_at : datetime
+}
+
+' ブックマーク
+entity bookmark {
+  *id : varchar(255)
+  --
+  *user_id : varchar(255)
+  name : varchar(255)
+  url : text
+  note : text
+  created_at : datetime
+  updated_at : datetime
+  deleted_at : datetime
+}
+
+' タグ
+entity tag {
+  *id : varchar(255)
+  --
+  *user_id : varchar(255)
+  name : varchar(255)
+  created_at : datetime
+  updated_at : datetime
+}
+
+' タグがどのブックマークに紐づくか。
+entity bookmark_tag_link {
+  *bookmark_id : varchar(255)
+  *tag_id : varchar(255)
+  --
+  created_at : datetime
+  updated_at : datetime
+}
+
+' ユーザのプランマスタ。
+'
+' * id 1 = フリープラン
+' * id 2 = スタンダードプラン
+' * id 3 = エンタープライズプラン
+entity plan {
+  *id : integer
+  --
+  name : varchar(255)
+  created_at : datetime
+  updated_at : datetime
+}
+
+' ユーザが契約しているプラン。
+'
+' ユーザ作成時にフリープランは作成される。
+' ユーザは必ずフリープランに一度は紐づく。
+entity contract {
+  *id : varchar(255)
+  --
+  *user_id : varchar(255)
+  *plan_id : integer
+  created_at : datetime
+  updated_at : datetime
+  activated_at : datetime
+  deactivated_at : datetime
+}
+
+user ||..o{ bookmark
+user ||..|{ contract
+contract ||..|{ plan
+bookmark }|..|{ bookmark_tag_link
+bookmark_tag_link ||..|{ tag
+
+@enduml

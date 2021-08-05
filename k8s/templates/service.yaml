@@ -9,5 +9,5 @@ spec:
   ports:
     - protocol: TCP
       port: 80
-      targetPort: 1234 # appコンテナのlistenポート
+      targetPort: 5000 # コンテナのlistenポート
       nodePort: {{ $.Values.bookmarkNodePort }} # ホストPCに公開するポート。30000-32767 の範囲で指定可能

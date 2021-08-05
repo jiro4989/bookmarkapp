@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: bookmark
+spec:
+  type: NodePort
+  selector:
+    app: bookmark
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 1234 # appコンテナのlistenポート
+      nodePort: {{ $.Values.bookmarkNodePort }} # ホストPCに公開するポート。30000-32767 の範囲で指定可能

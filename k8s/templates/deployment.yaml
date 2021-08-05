@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bookmark
+  labels:
+    app: bookmark
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: bookmark
+  template:
+    metadata:
+      labels:
+        app: bookmark
+    spec:
+      containers:
+        - name: bookmark
+          image: {{ $.Values.bookmarkImage }} # 手元でビルドした app コンテナのイメージ名
+          imagePullPolicy: IfNotPresent # 先にローカルにimageが存在するかをチェックする
+          ports:
+            - containerPort: 1234 # appコンテナのlistenポート

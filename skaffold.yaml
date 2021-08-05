@@ -1,0 +1,20 @@
+apiVersion: skaffold/v2beta11
+kind: Config
+
+build:
+  artifacts:
+    - image: bookmark
+      context: ./apps/bookmark
+      docker:
+        dockerfile: Dockerfile
+        target: builder
+
+deploy:
+  helm:
+    releases:
+      - name: local
+        chartPath: ./k8s
+        namespace: local
+        createNamespace: true
+        artifactOverrides:
+          bookmarkImage: bookmark

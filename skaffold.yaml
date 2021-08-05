@@ -4,7 +4,7 @@ kind: Config
 build:
   artifacts:
     - image: bookmark
-      context: ./apps/bookmark
+      context: ./apps/bookmark_server
       docker:
         dockerfile: Dockerfile
         target: builder

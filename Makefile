@@ -5,3 +5,7 @@ help: ## ドキュメントのヘルプを表示する。
 .PHONY: dev
 dev: ## skaffoldを実行する
 	skaffold dev
+
+.PHONY: healthcheck
+healthcheck: ## ヘルスチェックを行う
+	curl http://localhost:30001/healthz

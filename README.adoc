@@ -37,3 +37,33 @@ Kubernetesの勉強でWebアプリでも作ってみる。
 
 「こんなアプリいらんでしょ」と思ったあなた、その感覚は正常です。
 僕ならこんなアプリに金払おうとは思わない。
+
+== 開発者向け
+
+=== 環境構築
+
+以下が必要
+
+- docker
+- kubectl
+- skaffold
+- helm
+
+kubectl については Windows の DockerDesktop のKubernetesを有効にしたら使えた気が
+する。
+
+=== アプリの起動
+
+以下のコマンドを実行すると `skaffold dev` が走って自動ビルド状態になる。
+
+[source,bash]
+----
+make dev
+----
+
+=== 疎通確認
+
+[source,bash]
+----
+make healthcheck
+----

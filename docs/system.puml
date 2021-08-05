@@ -1,0 +1,42 @@
+@startuml
+
+actor User as u
+actor Operator as o
+
+package "Bookmark Service" {
+  [bookmark front] as bkm_front
+  node LoadBalancer as bkm_service
+  [app] as bkm_server_1
+  [app] as bkm_server_2
+  [app] as bkm_server_3
+}
+
+package "Operation Service" {
+  [operation front] as ops_front
+  node LoadBalancer as ops_service
+  [app] as ops_server_1
+  [app] as ops_server_2
+}
+
+[batch]
+
+database RDB as db
+
+u -down-> bkm_front
+bkm_front -down-> bkm_service
+bkm_service -down-> bkm_server_1
+bkm_service -down-> bkm_server_2
+bkm_service -down-> bkm_server_3
+bkm_server_1 -down-> db
+bkm_server_2 -down-> db
+bkm_server_3 -down-> db
+batch -up-> db
+
+o -down-> ops_front
+ops_front -down-> ops_service
+ops_service -down-> ops_server_1
+ops_service -down-> ops_server_2
+ops_server_1 -down-> db
+ops_server_2 -down-> db
+
+@enduml

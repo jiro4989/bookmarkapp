@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="628px" preserveAspectRatio="none" style="width:556px;height:628px;background:#FFFFFF;" version="1.1" viewBox="0 0 556 628" width="556px" zoomAndPan="magnify"><defs><filter height="300%" id="f1od9efa322864" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[7024dba7608f5a62d30f22989555dd52]
+cluster Bookmark Service--><polygon fill="#FFFFFF" filter="url(#f1od9efa322864)" points="16,110.5,164,110.5,171,132.7969,316,132.7969,316,419.5,16,419.5,16,110.5" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="16" x2="171" y1="132.7969" y2="132.7969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="142" x="20" y="125.4951">Bookmark Service</text><!--MD5=[04934246225f6ebddb0c834900dcbd81]
+cluster Operation Service--><polygon fill="#FFFFFF" filter="url(#f1od9efa322864)" points="340,110.5,488,110.5,495,132.7969,539,132.7969,539,419.5,340,419.5,340,110.5" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="340" x2="495" y1="132.7969" y2="132.7969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="142" x="344" y="125.4951">Operation Service</text><!--MD5=[94810e5b6b8b6ff48752208ae4a37a66]
+entity bkm_front--><rect fill="#FEFECE" filter="url(#f1od9efa322864)" height="46.2969" style="stroke:#A80036;stroke-width:1.5;" width="145" x="93.5" y="145.5"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="218.5" y="150.5"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="216.5" y="152.5"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="216.5" y="156.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="105" x="108.5" y="178.4951">bookmark front</text><!--MD5=[54ecb5b0c5291782d104448b3796a075]
+entity bkm_service--><polygon fill="#FEFECE" filter="url(#f1od9efa322864)" points="99.5,261.5,109.5,251.5,232.5,251.5,232.5,287.7969,222.5,297.7969,99.5,297.7969,99.5,261.5" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="222.5" x2="232.5" y1="261.5" y2="251.5"/><line style="stroke:#000000;stroke-width:1.5;" x1="99.5" x2="222.5" y1="261.5" y2="261.5"/><line style="stroke:#000000;stroke-width:1.5;" x1="222.5" x2="222.5" y1="261.5" y2="297.7969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="93" x="114.5" y="284.4951">LoadBalancer</text><!--MD5=[e2ac04ee58d768737db435963869e90a]
+entity bkm_server_1--><rect fill="#FEFECE" filter="url(#f1od9efa322864)" height="46.2969" style="stroke:#A80036;stroke-width:1.5;" width="66" x="32" y="357.5"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="78" y="362.5"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="76" y="364.5"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="76" y="368.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="26" x="47" y="390.4951">app</text><!--MD5=[e400b0aa826562cc9ac5d03492407cf5]
+entity bkm_server_2--><rect fill="#FEFECE" filter="url(#f1od9efa322864)" height="46.2969" style="stroke:#A80036;stroke-width:1.5;" width="66" x="133" y="357.5"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="179" y="362.5"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="177" y="364.5"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="177" y="368.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="26" x="148" y="390.4951">app</text><!--MD5=[b405bf039ea371322f022c61ff319310]
+entity bkm_server_3--><rect fill="#FEFECE" filter="url(#f1od9efa322864)" height="46.2969" style="stroke:#A80036;stroke-width:1.5;" width="66" x="234" y="357.5"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="280" y="362.5"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="278" y="364.5"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="278" y="368.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="26" x="249" y="390.4951">app</text><!--MD5=[a2c162c80d9e38b9e01e53ae769f17bc]
+entity ops_front--><rect fill="#FEFECE" filter="url(#f1od9efa322864)" height="46.2969" style="stroke:#A80036;stroke-width:1.5;" width="142" x="368" y="145.5"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="490" y="150.5"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="488" y="152.5"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="488" y="156.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="102" x="383" y="178.4951">operation front</text><!--MD5=[cf0ea077b7561ea3d83d4774d76dc8bf]
+entity ops_service--><polygon fill="#FEFECE" filter="url(#f1od9efa322864)" points="372.5,261.5,382.5,251.5,505.5,251.5,505.5,287.7969,495.5,297.7969,372.5,297.7969,372.5,261.5" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="495.5" x2="505.5" y1="261.5" y2="251.5"/><line style="stroke:#000000;stroke-width:1.5;" x1="372.5" x2="495.5" y1="261.5" y2="261.5"/><line style="stroke:#000000;stroke-width:1.5;" x1="495.5" x2="495.5" y1="261.5" y2="297.7969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="93" x="387.5" y="284.4951">LoadBalancer</text><!--MD5=[4d10cc9128d9c82f08b8640dfc881fbb]
+entity ops_server_1--><rect fill="#FEFECE" filter="url(#f1od9efa322864)" height="46.2969" style="stroke:#A80036;stroke-width:1.5;" width="66" x="356" y="357.5"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="402" y="362.5"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="400" y="364.5"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="400" y="368.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="26" x="371" y="390.4951">app</text><!--MD5=[93682f379f6553218f2003d3753a4a69]
+entity ops_server_2--><rect fill="#FEFECE" filter="url(#f1od9efa322864)" height="46.2969" style="stroke:#A80036;stroke-width:1.5;" width="66" x="457" y="357.5"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="503" y="362.5"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="501" y="364.5"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="501" y="368.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="26" x="472" y="390.4951">app</text><!--MD5=[7d46d6cd919e02e6168a09ad91eae8b4]
+entity u--><ellipse cx="166" cy="14" fill="#FEFECE" filter="url(#f1od9efa322864)" rx="8" ry="8" style="stroke:#A80036;stroke-width:1.5;"/><path d="M166,22 L166,49 M153,30 L179,30 M166,49 L153,64 M166,49 L179,64 " fill="none" filter="url(#f1od9efa322864)" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="32" x="150" y="82.4951">User</text><!--MD5=[75aabecaf70a71b0ff4b871eebba9af6]
+entity o--><ellipse cx="439" cy="14" fill="#FEFECE" filter="url(#f1od9efa322864)" rx="8" ry="8" style="stroke:#A80036;stroke-width:1.5;"/><path d="M439,22 L439,49 M426,30 L452,30 M439,49 L426,64 M439,49 L452,64 " fill="none" filter="url(#f1od9efa322864)" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="61" x="408.5" y="82.4951">Operator</text><!--MD5=[81eb248ad19e595af57658e74548f0fb]
+entity batch--><rect fill="#FEFECE" filter="url(#f1od9efa322864)" height="46.2969" style="stroke:#A80036;stroke-width:1.5;" width="79" x="227.5" y="568.5"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="286.5" y="573.5"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="284.5" y="575.5"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="284.5" y="579.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="39" x="242.5" y="601.4951">batch</text><!--MD5=[7468467f3b6b392f1d176d828c753b77]
+entity db--><path d="M241.5,473.5 C241.5,463.5 267,463.5 267,463.5 C267,463.5 292.5,463.5 292.5,473.5 L292.5,498.7969 C292.5,508.7969 267,508.7969 267,508.7969 C267,508.7969 241.5,508.7969 241.5,498.7969 L241.5,473.5 " fill="#FEFECE" filter="url(#f1od9efa322864)" style="stroke:#000000;stroke-width:1.5;"/><path d="M241.5,473.5 C241.5,483.5 267,483.5 267,483.5 C267,483.5 292.5,483.5 292.5,473.5 " fill="none" style="stroke:#000000;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="31" x="251.5" y="500.4951">RDB</text><!--MD5=[c6cbb43126e1cf1b5cd66e377b6fe84e]
+link u to bkm_front--><path d="M166,85.78 C166,103.57 166,124.08 166,140.11 " fill="none" id="u-to-bkm_front" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="166,145.36,170,136.36,166,140.36,162,136.36,166,145.36" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[9966b8a99a1e7205a4412287b1e166c0]
+link bkm_front to bkm_service--><path d="M166,191.56 C166,207.55 166,229.28 166,246.34 " fill="none" id="bkm_front-to-bkm_service" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="166,251.48,170,242.48,166,246.48,162,242.48,166,251.48" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[3e372be80d6fefcac29951fa2eebc8b1]
+link bkm_service to bkm_server_1--><path d="M144.58,297.56 C128.65,313.96 106.85,336.41 90.1,353.66 " fill="none" id="bkm_service-to-bkm_server_1" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="86.39,357.48,95.5315,353.8148,89.8752,353.8948,89.7952,348.2385,86.39,357.48" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[04a864ff8910f06745360d2afe157788]
+link bkm_service to bkm_server_2--><path d="M166,297.56 C166,313.55 166,335.28 166,352.34 " fill="none" id="bkm_service-to-bkm_server_2" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="166,357.48,170,348.48,166,352.48,162,348.48,166,357.48" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[194735db7040b9bde48a88fcdbf5b020]
+link bkm_service to bkm_server_3--><path d="M187.42,297.56 C203.35,313.96 225.15,336.41 241.9,353.66 " fill="none" id="bkm_service-to-bkm_server_3" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="245.61,357.48,242.2048,348.2385,242.1248,353.8948,236.4685,353.8148,245.61,357.48" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[3189b7e65c860e0c661d18e37abbc0d7]
+link bkm_server_1 to db--><path d="M85.42,403.61 C93.96,411.92 104.36,420.94 115,427.5 C153.98,451.54 204.63,468.21 236.49,477.19 " fill="none" id="bkm_server_1-to-db" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="241.44,478.57,233.8408,472.3048,236.6228,477.2303,231.6973,480.0123,241.44,478.57" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[dfcca06116fc27300360139115c612b8]
+link bkm_server_2 to db--><path d="M187.67,403.7 C203.62,420.05 225.34,442.31 242.02,459.4 " fill="none" id="bkm_server_2-to-db" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="245.72,463.19,242.3148,453.9485,242.2348,459.6048,236.5785,459.5248,245.72,463.19" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[e3535a143b3b27100e77437154298095]
+link bkm_server_3 to db--><path d="M267,403.7 C267,419.64 267,441.19 267,458.1 " fill="none" id="bkm_server_3-to-db" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="267,463.19,271,454.19,267,458.19,263,454.19,267,463.19" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[3a29c951b40bf7a2b421c618f699a299]
+reverse link db to batch--><path d="M267,513.81 C267,530.79 267,552.5 267,568.48 " fill="none" id="db-backto-batch" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="267,508.7,263,517.7,267,513.7,271,517.7,267,508.7" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[6579b6ffea0d14e6d3d8aba6981d9f6d]
+link o to ops_front--><path d="M439,85.78 C439,103.57 439,124.08 439,140.11 " fill="none" id="o-to-ops_front" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="439,145.36,443,136.36,439,140.36,435,136.36,439,145.36" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[eb2ef6b7d3534871806987c7702f2022]
+link ops_front to ops_service--><path d="M439,191.56 C439,207.55 439,229.28 439,246.34 " fill="none" id="ops_front-to-ops_service" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="439,251.48,443,242.48,439,246.48,435,242.48,439,251.48" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[686cb9e1f7ada87aaec5d12378fb98a1]
+link ops_service to ops_server_1--><path d="M428.4,297.56 C420.64,313.69 410.08,335.65 401.85,352.78 " fill="none" id="ops_service-to-ops_server_1" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="399.59,357.48,407.1038,351.1127,401.7629,352.9769,399.8988,347.636,399.59,357.48" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[33e6b5120a5a426d466959bc29125a8e]
+link ops_service to ops_server_2--><path d="M449.82,297.56 C457.73,313.69 468.5,335.65 476.9,352.78 " fill="none" id="ops_service-to-ops_server_2" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="479.2,357.48,478.8283,347.6382,476.9983,352.9908,471.6456,351.1609,479.2,357.48" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[37be1c214b9dfdad83be6a8ecc781c8e]
+link ops_server_1 to db--><path d="M362.83,403.7 C343.4,420.19 316.88,442.68 296.67,459.83 " fill="none" id="ops_server_1-to-db" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="292.71,463.19,302.1638,460.4285,296.5264,459.9596,296.9952,454.3223,292.71,463.19" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[4bf9d76813b7459536ac2f009be61b43]
+link ops_server_2 to db--><path d="M469.71,403.84 C461.2,412.18 450.77,421.15 440,427.5 C394.12,454.52 333.83,470.86 297.89,478.89 " fill="none" id="ops_server_2-to-db" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="292.76,480.01,302.4079,481.9893,297.6439,478.939,300.6943,474.175,292.76,480.01" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[b152278dbdd1aab21bf55c3ac2ddef17]
+@startuml
+
+actor User as u
+actor Operator as o
+
+package "Bookmark Service" {
+  [bookmark front] as bkm_front
+  node LoadBalancer as bkm_service
+  [app] as bkm_server_1
+  [app] as bkm_server_2
+  [app] as bkm_server_3
+}
+
+package "Operation Service" {
+  [operation front] as ops_front
+  node LoadBalancer as ops_service
+  [app] as ops_server_1
+  [app] as ops_server_2
+}
+
+[batch]
+
+database RDB as db
+
+u -down-> bkm_front
+bkm_front -down-> bkm_service
+bkm_service -down-> bkm_server_1
+bkm_service -down-> bkm_server_2
+bkm_service -down-> bkm_server_3
+bkm_server_1 -down-> db
+bkm_server_2 -down-> db
+bkm_server_3 -down-> db
+batch -up-> db
+
+o -down-> ops_front
+ops_front -down-> ops_service
+ops_service -down-> ops_server_1
+ops_service -down-> ops_server_2
+ops_server_1 -down-> db
+ops_server_2 -down-> db
+
+@enduml
+
+PlantUML version 1.2021.7(Sun May 23 21:40:07 JST 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: null
+--></g></svg>

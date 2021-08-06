@@ -20,3 +20,16 @@ spec:
           imagePullPolicy: IfNotPresent # 先にローカルにimageが存在するかをチェックする
           ports:
             - containerPort: 5000 # appコンテナのlistenポート
+
+        - name: cors
+          image: {{ $.Values.corsImage }} # 手元でビルドした app コンテナのイメージ名
+          imagePullPolicy: IfNotPresent # 先にローカルにimageが存在するかをチェックする
+          ports:
+            - containerPort: 81
+          env:
+            - name: ALLOW_ORIGIN
+              value: localhost:5000
+            - name: LISTEN_PORT
+              value: "81"
+            - name: TARGET_PORT
+              value: "5000"

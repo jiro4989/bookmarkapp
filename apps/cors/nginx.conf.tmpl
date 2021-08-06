@@ -1,0 +1,28 @@
+server {
+    listen ${LISTEN_PORT};
+    server_name localhost;
+    charset utf-8;
+    root /var/www;
+
+    location / {
+        # preflightリクエスト対策
+        if ($request_method = "OPTIONS") {
+            add_header Access-Control-Allow-Origin "${ALLOW_ORIGIN}";
+            add_header Access-Control-Allow-Methods "POST, GET, DELETE, PUT";
+            add_header Access-Control-Allow-Headers "Origin, Authorization, Accept";
+            add_header Access-Control-Max-Age 3600;
+            #add_header Access-Control-Allow-Credentials true;
+            add_header Content-Type 'text/plain charset=UTF-8';
+            add_header Content-Length 0;
+            return 204;
+        }
+
+        client_max_body_size 8m;
+
+        add_header Access-Control-Allow-Origin "${ALLOW_ORIGIN}" always;
+        proxy_set_header X-Forwarded-for $remote_addr;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header Host $http_host;
+        proxy_pass http://localhost:${TARGET_PORT}/;
+    }
+}

@@ -9,6 +9,11 @@ build:
         dockerfile: Dockerfile
         target: builder
 
+    - image: cors
+      context: ./apps/cors
+      docker:
+        dockerfile: Dockerfile
+
 deploy:
   helm:
     releases:
@@ -18,3 +23,4 @@ deploy:
         createNamespace: true
         artifactOverrides:
           bookmarkImage: bookmark
+          corsImage: cors

@@ -1,6 +1,9 @@
 CREATE TABLE user (
   primary key (id),
 
+  key email (email),
+  key name  (name),
+
   id         VARCHAR(255) NOT NULL,
   email      VARCHAR(255) NOT NULL,
   password   TEXT         NOT NULL,
@@ -12,6 +15,10 @@ CREATE TABLE user (
 
 CREATE TABLE bookmark (
   primary key (id),
+
+  key user_id (user_id),
+  key name    (name),
+  key url     (url),
 
   id         VARCHAR(255) NOT NULL,
   user_id    VARCHAR(255) NOT NULL,
@@ -28,6 +35,9 @@ CREATE TABLE bookmark (
 CREATE TABLE tag (
   primary key (id),
 
+  key user_id (user_id),
+  key name    (name),
+
   id         VARCHAR(255) NOT NULL,
   user_id    VARCHAR(255) NOT NULL,
   name       VARCHAR(255) NOT NULL,
@@ -39,6 +49,9 @@ CREATE TABLE tag (
 
 CREATE TABLE bookmark_tag_link (
   primary key (bookmark_id, tag_id),
+
+  key bookmark_id (bookmark_id),
+  key tag_id      (tag_id),
 
   bookmark_id VARCHAR(255) NOT NULL,
   tag_id      VARCHAR(255) NOT NULL,
@@ -52,6 +65,8 @@ CREATE TABLE bookmark_tag_link (
 CREATE TABLE plan (
   primary key (id),
 
+  key name (name),
+
   id         INTEGER(4)   NOT NULL,
   name       VARCHAR(255) NOT NULL,
   created_at DATETIME     NOT NULL DEFAULT NOW(),
@@ -60,6 +75,9 @@ CREATE TABLE plan (
 
 CREATE TABLE contract (
   primary key (id),
+
+  key user_id (user_id),
+  key plan_id (plan_id),
 
   user_id        VARCHAR(255) NOT NULL,
   plan_id        VARCHAR(255) NOT NULL,

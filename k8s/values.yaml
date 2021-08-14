@@ -6,17 +6,18 @@ mysql:
   # 本当は平文で保存するのはNG
   auth:
     rootPassword: password
+    username: dev
+    password: password
+    database: test
 
   initdbScripts:
     init.sql: |
       CREATE TABLE user (
         primary key (id),
 
-        key email (email),
         key name  (name),
 
         id         VARCHAR(255) NOT NULL,
-        email      VARCHAR(255) NOT NULL,
         password   TEXT         NOT NULL,
         name       VARCHAR(255) NOT NULL,
         created_at DATETIME     NOT NULL DEFAULT NOW(),

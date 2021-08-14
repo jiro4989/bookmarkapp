@@ -20,6 +20,17 @@ spec:
           imagePullPolicy: IfNotPresent # 先にローカルにimageが存在するかをチェックする
           ports:
             - containerPort: 5000 # appコンテナのlistenポート
+          env:
+            - name: DB_CONNECTION
+              value: mysql:3306
+            - name: DB_USER
+              value: dev
+            - name: DB_PASSWORD
+              value: password
+            - name: DB_DATABASE
+              value: test
+            - name: SALT
+              value: nim
 
         - name: cors
           image: {{ $.Values.corsImage }} # 手元でビルドした app コンテナのイメージ名

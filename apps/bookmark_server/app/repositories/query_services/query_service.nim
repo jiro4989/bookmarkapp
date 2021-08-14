@@ -4,8 +4,6 @@ import allographer/query_builder
 import query_service_interface
 import ../../core/models/user
 
-import uuids
-
 type QueryService* = ref object
 
 proc newQueryService*(): QueryService =
@@ -14,12 +12,13 @@ proc newQueryService*(): QueryService =
 proc getUsers(this: QueryService): seq[User] =
   return rdb().table("user").get().mapIt(it.to(User))
 
-proc postUsers(this: QueryService): User =
-  let id = $genUUID()
-  #return rdb().table("user").get()
+proc postUsers(this: QueryService, name, password: string): User =
+  let u = newUser(name, password)
+  rdb().table("user").insert(%* u)
+  return u
 
 proc toInterface*(this: QueryService): IQueryService =
   return (
     getUsers: proc(): seq[User] = this.getUsers,
-    postUsers: proc(): User = this.postUsers,
+    postUsers: proc(name, password: string): User = this.postUsers(name, password),
   )

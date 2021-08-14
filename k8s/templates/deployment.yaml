@@ -21,9 +21,11 @@ spec:
           ports:
             - containerPort: 5000 # appコンテナのlistenポート
           env:
-            - name: DB_CONNECTION
-              value: mysql:3306
-            - name: DB_USER
+            - name: DB_HOSTNAME
+              value: mysql
+            - name: DB_PORT
+              value: '3306'
+            - name: DB_USERNAME
               value: dev
             - name: DB_PASSWORD
               value: password

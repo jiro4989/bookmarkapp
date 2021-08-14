@@ -19,6 +19,7 @@ func main() {
 
 	e.GET("/users", api.GetUsers)
 	e.POST("/users", api.PostUsers)
+	e.GET("/healthz", api.GetHealthz)
 
 	e.Logger.Fatal(e.Start(":5000"))
 }

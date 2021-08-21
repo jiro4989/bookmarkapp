@@ -12,3 +12,5 @@ bin           = @["bookmark_server"]
 
 requires "nim >= 1.4.8"
 requires "prologue >= 0.4.4"
+requires "envconfig >= 1.1.0"
+requires "uuids >= 0.1.11"

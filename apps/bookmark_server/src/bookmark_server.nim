@@ -1,11 +1,9 @@
-import os, strutils
-
 import prologue
 
-import bookmark_serverpkg/api
+import bookmark_serverpkg/apis
+import bookmark_serverpkg/configs
 
-let port = getEnv("SERVER_PORT").parseInt
-let settings = newSettings(debug = true, port = Port(port), secretKey = "sushi")
+let settings = newSettings(debug = true, port = Port(config.serverPort), secretKey = "sushi")
 var app = newApp(settings = settings)
-app.addRoute(api.routes, "")
+app.addRoute(apis.routes, "")
 app.run()

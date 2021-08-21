@@ -2,7 +2,6 @@ FROM nimlang/nim:1.4.8-alpine AS base
 
 WORKDIR /app
 COPY . /app
-RUN nimble install -Y -d
 
 FROM base AS builder
 

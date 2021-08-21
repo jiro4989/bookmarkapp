@@ -21,18 +21,18 @@ spec:
           ports:
             - containerPort: 5000 # appコンテナのlistenポート
           env:
-            - name: SERVER_PORT
+            - name: BOOKMARK_SERVER_SERVER_PORT
               value: "5000"
-            - name: DB_CONNECTION
-              value: mysql:3306
-            - name: DB_USER
+            - name: BOOKMARK_SERVER_DB_HOST
+              value: mysql
+            - name: BOOKMARK_SERVER_DB_PORT
+              value: "3306"
+            - name: BOOKMARK_SERVER_DB_USER
               value: dev
-            - name: DB_PASSWORD
+            - name: BOOKMARK_SERVER_DB_PASSWORD
               value: password
-            - name: DB_DATABASE
+            - name: BOOKMARK_SERVER_DB_DATABASE
               value: test
-            - name: SALT
-              value: nim
 
         - name: cors
           image: {{ $.Values.corsImage }} # 手元でビルドした app コンテナのイメージ名

@@ -16,4 +16,5 @@ proc getUsers*(): seq[User] =
     result.add u
 
 proc saveUser*(user: User) =
+  if user.id == "": return
   db.exec(sql"INSERT INTO user (id, email, name) VALUES (?, ?, ?)", user.id, user.email, user.name)
